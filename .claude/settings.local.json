@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude_ai_Zoho_Flashbox__ZohoCRM_getOrganization",
+      "mcp__claude_ai_Zoho_Flashbox__ZohoCRM_getModules",
+      "mcp__claude_ai_Zoho_Flashbox__ZohoAnalytics_getOrganizations",
+      "mcp__claude_ai_Zoho_Flashbox__ZohoCRM_getUsers"
+    ]
+  }
+}
