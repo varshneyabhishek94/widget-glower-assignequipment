@@ -1,0 +1,23 @@
+{
+  "service_name": "WidgetGlower",
+  "components": {
+    "widgets": [
+      {
+        "name": "AssignEquipment",
+        "widget_type": "transition",
+        "modules": ["Deals"],
+        "url": "/app/index.html",
+        "logo": "",
+        "description": "Assign available equipment assets to a Deal during a Blueprint transition.",
+        "default_height": "600",
+        "default_width": "800"
+      }
+    ]
+  },
+  "config": {},
+  "authentication": {},
+  "hosting": {
+    "type": "crm",
+    "url": ""
+  }
+}

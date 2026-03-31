@@ -4,7 +4,15 @@
       "mcp__claude_ai_Zoho_Flashbox__ZohoCRM_getOrganization",
       "mcp__claude_ai_Zoho_Flashbox__ZohoCRM_getModules",
       "mcp__claude_ai_Zoho_Flashbox__ZohoAnalytics_getOrganizations",
-      "mcp__claude_ai_Zoho_Flashbox__ZohoCRM_getUsers"
+      "mcp__claude_ai_Zoho_Flashbox__ZohoCRM_getUsers",
+      "Bash(npx --version)",
+      "Bash(curl:*)",
+      "Bash(openssl req:*)",
+      "Bash(MSYS_NO_PATHCONV=1 openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365 -nodes -subj \"/CN=localhost\")",
+      "Bash(node server.js)",
+      "Bash(netstat -ano)",
+      "Bash(taskkill //PID 18704 //F)",
+      "Bash(taskkill //PID 14916 //F)"
     ]
   }
 }

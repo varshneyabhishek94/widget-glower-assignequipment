@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assign Equipment</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://live.zwidgets.com/js-sdk/1.2/ZohoEmbededAppSDK.min.js"></script>
+</head>
+<body>
+
+  <div id="widget-root">
+
+    <!-- Header -->
+    <div class="widget-header">
+      <h1>Assign Equipment</h1>
+    </div>
+
+    <!-- Deal summary bar -->
+    <div id="deal-summary" class="deal-summary hidden">
+      <span id="deal-name" class="deal-label"></span>
+      <span class="date-range">
+        <strong>Requested:</strong>
+        <span id="deal-start">—</span> &rarr; <span id="deal-end">—</span>
+      </span>
+    </div>
+
+    <!-- Toolbar: search + selected count + button -->
+    <div id="toolbar" class="toolbar hidden">
+      <input
+        type="text"
+        id="search-input"
+        class="search-input"
+        placeholder="Search assets..."
+      />
+      <div class="toolbar-right">
+        <span id="selected-count" class="selected-count">0 selected</span>
+        <button id="assign-btn" class="btn btn-primary" disabled>
+          Assign Equipment
+        </button>
+      </div>
+    </div>
+
+    <!-- Table container -->
+    <div id="table-container" class="table-container hidden">
+      <table id="assets-table">
+        <thead>
+          <tr>
+            <th class="col-check">
+              <input type="checkbox" id="select-all" title="Select all" />
+            </th>
+            <th>Asset Name</th>
+            <th>Asset ID</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="assets-tbody"></tbody>
+      </table>
+    </div>
+
+    <!-- States -->
+    <div id="loading-state" class="state-msg">
+      <div class="spinner"></div>
+      <p>Loading assets...</p>
+    </div>
+
+    <div id="empty-state" class="state-msg hidden">
+      <p>No available assets found for the requested date range.</p>
+    </div>
+
+    <div id="error-state" class="state-msg hidden">
+      <p id="error-text" class="error-text"></p>
+    </div>
+
+    <!-- Result banner -->
+    <div id="result-banner" class="result-banner hidden"></div>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
